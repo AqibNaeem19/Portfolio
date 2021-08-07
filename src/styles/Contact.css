@@ -1,0 +1,163 @@
+.footer-container{
+     display: flex;
+     flex-direction: column;
+     padding: 20px 0px;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 30px;
+     background: #485563;  
+}
+
+.contact-heading{
+     font-size: 36px;
+     margin-bottom: 10px;
+     color: white;
+     font-weight: 400;
+     letter-spacing: 3px;
+}
+
+.Hire-statement{
+     color: white;
+     font-weight: 300;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+}
+
+.Hire-statement-spans{
+     color: yellow;
+     font-weight: 600;
+     filter: brightness(150);
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+}
+
+.Form-container{
+     width: 50%;
+     background-color: rgb(138, 136, 136);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+}
+
+.Form {
+     width: 40%;
+}
+
+.Form input, .Form textarea{
+     width: 100%;
+     margin-bottom: 20px;
+     border: 2px solid yellow;
+     background: #2d3436;
+     color: white;
+     border-radius: 10px;
+     padding: 15px;
+     box-shadow: 6px 7px 7px rgb(29, 29, 29);
+}
+
+textarea{
+     resize: none;
+     height: 25vh;
+}
+textarea::placeholder, input::placeholder{
+
+     font-size: 15px;
+     font-family: 'Montserrat', sans-serif;
+     color: white;
+}
+
+input:focus,textarea:focus{
+     outline: none;
+}
+
+button[type="submit"]:focus, button[type="submit"]:active{
+     outline: none;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover{
+     cursor: pointer;
+     box-shadow: 10px 10px 5px rgb(29, 29, 29);
+}
+.Form-submit[type="submit"]{
+     padding: 5px 30px 5px 30px;
+     background-color: #2d3436;
+     color: yellow;
+     border: 2px solid yellow;
+     border-radius: 10px 0px 10px 0px;
+     font-weight: 300;
+     font-family: 'Montserrat', sans-serif;
+     transition: 1s;
+}
+button[type="submit"]:hover, button[type="reset"]:hover{
+     transform: scale(1.1);
+}
+
+.Form-clear{
+     float: right;
+     padding: 5px 30px 5px 30px;
+     background-color: #2d3436;
+     color: red;
+     border: 2px solid red;
+     border-radius: 10px 0px 10px 0px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 300;
+     transition: 1s;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1110px){
+     .Form{
+          width: 50%;
+     }
+}
+
+@media screen and (max-width: 884px){
+     .Form{
+          width: 60%;
+     }
+
+     .Hire-statement{
+          font-size: 18px;
+     }
+
+     .Hire-statement-spans{
+          font-size: 18px;
+     }
+}
+
+@media screen and (max-width: 681px){
+     .Form{
+          width: 80%;
+     }
+     .Hire-statement{
+          font-size: 18px;
+     }
+
+     .Hire-statement-spans{
+          font-size: 18px;
+     }
+}
+
+@media screen and (max-width: 472px){
+     .Hire-statement{
+          font-size: 13px;
+     }
+
+     .Hire-statement-spans{
+          font-size: 13px;
+     }
+
+     .Form-submit[type="submit"]{
+          padding: 5px 20px 5px 20px;
+     }
+
+     button[type="submit"]:hover, button[type="reset"]:hover{
+          transform: scale(1.05);
+     }
+     
+     .Form-clear{
+          padding: 5px 20px 5px 20px;
+     }
+}

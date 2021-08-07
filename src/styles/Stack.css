@@ -1,0 +1,109 @@
+.Stack-container {
+  background-image: linear-gradient(to right, #353535 0%, black 100%);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.Stack-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.Stack-name {
+  color: yellow;
+  letter-spacing: 3px;
+  transform: scale(0);
+  font-size: 15px;
+  transition: all 0.5s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Stack-logos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+
+.Stack-logos div {
+  width: 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.fa-html5 {
+  font-size: 4rem;
+  color: #e34c26;
+}
+
+.fa-html5:hover ~ .Stack-name {
+  transform: scale(0.9);
+}
+
+.fa-css3-alt {
+  font-size: 4rem;
+  color: #264de4;
+}
+
+.fa-css3-alt:hover ~ .Stack-name {
+  transform: scale(0.9);
+}
+
+.fa-js-square {
+  font-size: 4rem;
+  color: #f0db4f;
+}
+
+.fa-js-square:hover ~ .Stack-name {
+  transform: scale(0.9);
+}
+
+.fa-bootstrap {
+  font-size: 4rem;
+  color: #563d7c;
+}
+
+.fa-bootstrap:hover ~ .Stack-name {
+  transform: scale(0.9);
+}
+
+.fa-react {
+  font-size: 4rem;
+  color: #61dbfb;
+  animation: rotateReact 3s infinite;
+}
+
+.fa-react:hover ~ .Stack-name {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 740px) {
+  .Stack-logos {
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+  .Stack-logos div {
+    width: 50%;
+    margin-bottom: 30px;
+    height: 70px;
+  }
+  .Stack-container{
+    padding-top: 100px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes rotateReact {
+     50% {transform: rotate(180deg); filter: brightness(200%) contrast(200%);}
+}

@@ -1,0 +1,167 @@
+.landingPage-container {
+  background-image: url("../images/background.jfif");
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.landingPage-mainHeading {
+  font-size: 56px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  width: 60%;
+  animation-name: mymove;
+  animation-duration: 3s;
+}
+
+.landingPage-mainParagraph {
+  font-size: 29px;
+  color: white;
+  width: 70%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landingPage-hr {
+  width: 30%;
+  background-color: yellow;
+  height: 4px;
+  margin: 10px 0;
+}
+
+.landingPage-span {
+  color: yellow;
+}
+
+.landingPage-ballContainer {
+  margin-top: 30px;
+  position: relative;
+  width: 60%;
+  height: 20%;
+}
+
+.landingPage-ball1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: floralwhite;
+  animation: ball1 3s infinite;
+}
+
+.landingPage-ball2 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: floralwhite;
+  animation: ball2 3s infinite;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 750px) {
+  .landingPage-mainHeading {
+    font-size: 48px;
+    color: white;
+    width: 75%;
+  }
+
+  .landingPage-mainParagraph {
+    font-size: 24px;
+    color: white;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .landingPage-mainHeading {
+    font-size: 40px;
+    color: white;
+    width: 80%;
+  }
+
+  .landingPage-mainParagraph {
+    font-size: 24px;
+    color: white;
+    line-height: 1.8rem;
+    width: 90%;
+  }
+
+  .landingPage-ball1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .landingPage-ball2 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes ball1 {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 100px;
+    transform: rotate(180deg);
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    top: 100px;
+  }
+  50% {
+    top: 10px;
+    transform: rotate(-180deg);
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
