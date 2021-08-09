@@ -46,7 +46,7 @@ export default class Contact extends Component {
 
 					<div className='Form'>
 						<h2 className="Hire-statement">
-							Wanna hire me <span className="Hire-statement-spans">?</span>
+							Want to hire me<span className="Hire-statement-spans">? </span>
 							I'm just an email away<span className="Hire-statement-spans">!</span>
 						</h2>
 
